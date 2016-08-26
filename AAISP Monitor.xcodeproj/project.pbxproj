@@ -13,7 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BFFDCC641D58FFE4003003AC /* AAISP Usage V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AAISP Usage V2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFDCC641D58FFE4003003AC /* AAISP Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AAISP Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFDCC671D58FFE4003003AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFFDCC691D58FFE4003003AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFFDCC6C1D58FFE4003003AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -34,7 +34,7 @@
 		BFFDCC5B1D58FFE4003003AC = {
 			isa = PBXGroup;
 			children = (
-				BFFDCC661D58FFE4003003AC /* AAISP Usage V2 */,
+				BFFDCC661D58FFE4003003AC /* AAISP Monitor */,
 				BFFDCC651D58FFE4003003AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,12 +42,12 @@
 		BFFDCC651D58FFE4003003AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFFDCC641D58FFE4003003AC /* AAISP Usage V2.app */,
+				BFFDCC641D58FFE4003003AC /* AAISP Monitor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFFDCC661D58FFE4003003AC /* AAISP Usage V2 */ = {
+		BFFDCC661D58FFE4003003AC /* AAISP Monitor */ = {
 			isa = PBXGroup;
 			children = (
 				BFFDCC671D58FFE4003003AC /* AppDelegate.swift */,
@@ -55,15 +55,16 @@
 				BFFDCC6B1D58FFE4003003AC /* MainMenu.xib */,
 				BFFDCC6E1D58FFE4003003AC /* Info.plist */,
 			);
-			path = "AAISP Usage V2";
+			name = "AAISP Monitor";
+			path = "AAISP Monitor";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFFDCC631D58FFE4003003AC /* AAISP Usage V2 */ = {
+		BFFDCC631D58FFE4003003AC /* AAISP Monitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFFDCC711D58FFE4003003AC /* Build configuration list for PBXNativeTarget "AAISP Usage V2" */;
+			buildConfigurationList = BFFDCC711D58FFE4003003AC /* Build configuration list for PBXNativeTarget "AAISP Monitor" */;
 			buildPhases = (
 				BFFDCC601D58FFE4003003AC /* Sources */,
 				BFFDCC611D58FFE4003003AC /* Frameworks */,
@@ -73,9 +74,9 @@
 			);
 			dependencies = (
 			);
-			name = "AAISP Usage V2";
-			productName = "AAISP Usage V2";
-			productReference = BFFDCC641D58FFE4003003AC /* AAISP Usage V2.app */;
+			name = "AAISP Monitor";
+			productName = "AAISP Monitor";
+			productReference = BFFDCC641D58FFE4003003AC /* AAISP Monitor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -93,7 +94,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BFFDCC5F1D58FFE4003003AC /* Build configuration list for PBXProject "AAISP Usage V2" */;
+			buildConfigurationList = BFFDCC5F1D58FFE4003003AC /* Build configuration list for PBXProject "AAISP Monitor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -106,7 +107,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFFDCC631D58FFE4003003AC /* AAISP Usage V2 */,
+				BFFDCC631D58FFE4003003AC /* AAISP Monitor */,
 			);
 		};
 /* End PBXProject section */
@@ -233,10 +234,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "AAISP Usage V2/Info.plist";
+				INFOPLIST_FILE = "AAISP Monitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.behinddesign.AAISP-Usage-V2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "AAISP Monitor";
 			};
 			name = Debug;
 		};
@@ -245,17 +246,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "AAISP Usage V2/Info.plist";
+				INFOPLIST_FILE = "AAISP Monitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.behinddesign.AAISP-Usage-V2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "AAISP Monitor";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFFDCC5F1D58FFE4003003AC /* Build configuration list for PBXProject "AAISP Usage V2" */ = {
+		BFFDCC5F1D58FFE4003003AC /* Build configuration list for PBXProject "AAISP Monitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFFDCC6F1D58FFE4003003AC /* Debug */,
@@ -264,13 +265,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFFDCC711D58FFE4003003AC /* Build configuration list for PBXNativeTarget "AAISP Usage V2" */ = {
+		BFFDCC711D58FFE4003003AC /* Build configuration list for PBXNativeTarget "AAISP Monitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFFDCC721D58FFE4003003AC /* Debug */,
 				BFFDCC731D58FFE4003003AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
