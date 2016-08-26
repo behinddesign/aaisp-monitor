@@ -18,6 +18,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var updateFreq = 0
     var timer = NSTimer.init()
     
+    let statusIconBlack = NSImage(named: "statusIconBlack")
+    let statusIconWhite = NSImage(named: "statusIconWhite")
+    
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var settingsMenu: NSWindow!
@@ -32,7 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func settingsClicked(sender: AnyObject) {
         emailAddressField.stringValue = emailAddress
         passwordField.stringValue = password
-        updateFreqField.integerValue = updateFreq
+        updateFreqField.stringValue = String(updateFreq)
         
         settingsMenu.setIsVisible(true)
     }
@@ -66,10 +69,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        let icon = NSImage(named: "statusIcon")
-        //icon.setTemplate(true)
-        
-        statusItem.image = icon
         statusItem.title = "..."
         statusItem.menu = statusMenu
         
@@ -99,6 +98,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         statusItem.title = "...."
+        
+        if NSUserDefaults.standardUserDefaults().stringForKey("AppleInterfaceStyle") == "Light" {
+            statusItem.image = statusIconBlack
+        } else {
+            statusItem.image = statusIconWhite
+        }
         
         print ("Starting usage update")
         // Setup the session to make REST GET call.  Notice the URL is https NOT http!!
